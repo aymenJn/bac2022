@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body style="height: 70vh;">
+     <div style="display: flex; border: 5px solid #000;"  >
+        <div style="display: flex;flex-direction: column;border: 5px solid #000; ">
+           <a href="" > <h1 >
+                inscrption
+            </h1></a>
+        <a href="Reservation.html" >    <h1>
+                Reservation 
+            </h1></a>  
+        </div>
+
+       
+             <form method="post" action="inscri.php"  style="text-align: center; margin-left: 30%; display: flex; flex-direction: column;" >
+
+
+                <h1> fifa.com </h1>
+                <div>
+                    name passport  : <input type="text" id="passport" name="passport">
+                </div>
+                <div>
+                    pays : <select id="selectpays" title="select" name="select">
+                
+                        <option name="select" value="">Angletter</option> 
+                        <option name="select" value="">France</option> 
+                        <option name="select" value="">Allmagne</option> </select>
+                </div>
+                <div>
+                    name & Lastname  : <input type="text" id="name" name="name">
+                </div>
+                <div>
+                <input type="submit" value="valide" disabled id="goto">
+                <input type="reset" value="annuler">
+                </div>
+           
+             </form>
+             <button onclick={verif1()}>verif</button>
+
+     </div>
+     <script src="verif.js"></script>
+    </body>
+</html>
